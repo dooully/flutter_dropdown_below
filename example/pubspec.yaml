@@ -22,7 +22,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dropdown_below: 0.0.5
+  dropdown_below:
+    path: ../
 
 
 

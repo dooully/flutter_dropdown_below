@@ -28,8 +28,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  List _testList = [{'no': 1, 'keyword': 'blue'},{'no': 2, 'keyword': 'black'},{'no': 3, 'keyword': 'red'}];
+  List _testList = [
+    {'no': 1, 'keyword': 'blue'},
+    {'no': 2, 'keyword': 'black'},
+    {'no': 3, 'keyword': 'red'}
+  ];
   List<DropdownMenuItem> _dropdownTestItems;
   var _selectedTest;
 
@@ -78,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
               itemWidth: 200,
               itemTextstyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black),
               boxTextstyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color(0XFFbbbbbb)),
-              boxPadding: EdgeInsets.fromLTRB(13, 12, 0, 12),
+              boxPadding: EdgeInsets.only(left: 10),
               boxWidth: 200,
               boxHeight: 45,
               hint: Text('choose item'),
@@ -86,6 +89,39 @@ class _MyHomePageState extends State<MyHomePage> {
               items: _dropdownTestItems,
               onChanged: onChangeDropdownTests,
             ),
+            SizedBox(
+              height: 30,
+            ),
+            DropdownBelow(
+              spacing: 10,
+              itemHeight: 40,
+              itemWidth: 300,
+              boxWidth: 300,
+              elevation: 0,
+              itemTextstyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black),
+              boxTextstyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black),
+              boxPadding: EdgeInsets.symmetric(horizontal: 8),
+              boxDecoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(32),
+                border: Border.all(
+                  color: Colors.green,
+                  width: 1,
+                ),
+                color: Colors.white,
+              ),
+              icon: Icon(Icons.arrow_drop_down, size: 24, color: Colors.red),
+              selectedColor: Colors.grey[400],
+              hint: Text(
+                "Select",
+                style: TextStyle(
+                  color: Colors.grey[400],
+                  fontSize: 16,
+                ),
+              ),
+              value: _selectedTest,
+              items: _dropdownTestItems,
+              onChanged: onChangeDropdownTests,
+            )
           ],
         ),
       ),

@@ -1,6 +1,10 @@
 # Flutter Dropdown_Below
 
 
+<img src="https://raw.githubusercontent.com/dooully/flutter_dropdown_below/master/test2.gif" width="383" height="318">
+
+
+
 #### A Flutter Dropdown library which is customize flutter dropdownbutton widget.
 
 ![license](https://img.shields.io/github/license/whatamelon/flutter_dropdown_below?color=red&style=flat-square)
