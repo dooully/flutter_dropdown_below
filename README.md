@@ -1,7 +1,7 @@
 # Flutter Dropdown_Below
 
 
-<img src="https://raw.githubusercontent.com/dooully/flutter_dropdown_below/master/test2.gif" width="383" height="318">
+<img src="https://raw.githubusercontent.com/dooully/flutter_dropdown_below/master/test2.gif" width="285" height="584">
 
 
 
